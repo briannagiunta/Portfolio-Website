@@ -1,6 +1,7 @@
 import Project from './project'
+import Popup from './popup'
 
-const Projects = () =>{
+const Projects = (props) =>{
 
     const projectArr = [
         {'title':'The Boozy Barista',
@@ -22,7 +23,7 @@ const Projects = () =>{
             <h1>Projects</h1>
             <div className = 'projects'>
                 {projectArr.map((p,i)=>
-                    <Project key = {i} title = {p.title} image={p.image} site={p.site} gitFront={p.gitFront} gitBack={p.gitBack} />
+                    <Project key = {i} p={p} setProject={props.setProject} title = {p.title} image={p.image} site={p.site} gitFront={p.gitFront} gitBack={p.gitBack} />
                 )}
             </div>
         </div>

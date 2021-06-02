@@ -3,16 +3,27 @@ import Header from './components/header'
 import Tech from './components/tech'
 import About from './components/about'
 import Projects from './components/projects'
+import Popup from './components/popup'
+import { useEffect, useState } from 'react'
+
 
 function App() {
+  const [project, setProject] = useState(null)
+
+  useEffect(()=>{setProject(null)},[])
+
   return (
-    <div className="App">
-      {/* <a href='#about-container'>About</a> */}
-      <Header />
-      <Tech />
-      <About />
-      <Projects />
-    </div>
+    <>
+      {project &&
+      <Popup project={project} setProject={setProject}/>   
+      }
+      <div className="App">
+        <Header />
+        <Tech />
+        <About />
+        <Projects setProject={setProject}/>
+      </div>
+    </>
   );
 }
 

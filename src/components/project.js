@@ -7,7 +7,7 @@ const Project = (props) =>{
         <div className='project' style={{backgroundImage:`linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(${props.image})`}}>
             <div>{props.title}</div>
             <div className = 'project-icon-container'>
-                <div className='overview' onMouseEnter={()=>{setShow('Overview')}} onMouseLeave={()=>{setShow(null)}}>
+                <div className='overview' onClick={()=>{props.setProject(props.p)}} onMouseEnter={()=>{setShow('Overview')}} onMouseLeave={()=>{setShow(null)}}>
                     <img className = 'project-icon' src = 'https://i.imgur.com/siyQ6kh.png?1'/>
                     {show === 'Overview' && 
                     <div className='project-icon-text'>Overview</div>
