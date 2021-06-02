@@ -7,6 +7,7 @@ import Projects from './components/projects'
 function App() {
   return (
     <div className="App">
+      {/* <a href='#about-container'>About</a> */}
       <Header />
       <Tech />
       <About />
