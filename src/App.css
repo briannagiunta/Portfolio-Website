@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Seymour+One&family=Ubuntu:wght@300&display=swap');
+
 html{
   height: 100%;
   width: 100%;
@@ -17,6 +19,7 @@ body{
   height: 100%;
   width: 100%;
   text-align: center;
+  font-family: 'Ubuntu';
 }
 
 a{
@@ -27,7 +30,6 @@ a{
   width: 100%;
   height: 50%;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   background-image: url('https://i.imgur.com/dFdoBHx.jpg');
   background-position: center;
@@ -42,7 +44,6 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid yellow; */
 }
 .info-container{
   height: 70%;
@@ -51,7 +52,6 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid blue; */
 }
 .name{
   font-size: 300%;
@@ -64,7 +64,6 @@ a{
 .contact{
   width: 80%;
   height: 50%;
-  /* border: 1px solid red; */
   font-size:x-large;
   font-weight: bold;
   display: flex;
@@ -74,7 +73,6 @@ a{
 }
 
 .icon-container{
-  /* border: 1px solid blue; */
   width: 50%;
   display: flex;
   align-items: center;
@@ -103,7 +101,7 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #a563c7;
   padding: 10px;
 
 }
@@ -130,21 +128,80 @@ a{
   justify-content: center;
   font-size: larger;
   padding: 10px;
+  border-bottom: 2px solid #a563c7;
 }
 .about{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Fira Sans';
   font-size: larger;
   width: 90%;
 }
 
 h1{
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #a563c7;
 }
 
 .projects-container {
   width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  padding: 10px;
+  border-bottom: 2px solid #a563c7;
 }
 
+.projects{
+  width: 90%;
+  height: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+.project{
+  height: 70%;
+  width: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Seymour One';
+  font-weight: bolder;
+  font-size: 150%;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 50%), 0 1px 4px rgb(0 0 0 / 50%);
+}
+
+.project-icon-container{
+  width: 30%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.overview:hover{
+  cursor: pointer;
+}
+
+.project-icon{
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 30%), 0 1px 4px rgb(0 0 0 / 30%);
+}
+
+.project-icon-text{
+  font-size: xx-small;
+  font-family: 'Fira Sans';
+  color:white;
+}

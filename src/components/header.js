@@ -37,9 +37,7 @@ const Header = () =>{
                                 <div className='icon-text'>Resume</div>
                                 }
                             </a>
-
-                        </div>
-                        
+                        </div>  
                     </div>
                 </div>
                 <img className='picture' src = 'https://i.imgur.com/S8X5YLv.jpg?1'/>
